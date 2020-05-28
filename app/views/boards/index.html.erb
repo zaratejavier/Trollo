@@ -1,0 +1,7 @@
+<h1>Your Boards</h1>
+<hr/>
+<% @boards.each do |board|%>
+  <div>
+    <h3><%= link_to board.name, lists_path %> </h3>
+  </div>
+<%end%>

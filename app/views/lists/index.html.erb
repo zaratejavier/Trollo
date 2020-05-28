@@ -1,0 +1,8 @@
+<h1>Lists#index</h1>
+<hr/>
+<% @lists.each do |list|%>
+  <div>
+    <h3><%= link_to list.name, lists_path %> </h3>
+  </div>
+<%end%>
+
