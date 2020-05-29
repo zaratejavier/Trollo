@@ -1,7 +1,12 @@
-<h1>Your Boards</h1>
+<h1 class ="ui header">Your Boards</h1>
 <hr/>
 <% @boards.each do |board|%>
-  <div>
+  <div class="ui card">
+  <br/>
     <h3><%= link_to board.name, lists_path %> </h3>
+  <br/>
+
+  <%=link_to "Delete",board_path(board), method: :delete%>
+
   </div>
 <%end%>

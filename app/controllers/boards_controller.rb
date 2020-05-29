@@ -26,7 +26,7 @@ class BoardsController < ApplicationController
 
   def update
     if(@board.update(board_params))
-      redirect_to @boards
+      redirect_to @board
     else
       render :edit
     end
@@ -34,7 +34,7 @@ class BoardsController < ApplicationController
 
   def destroy
     @board.destroy
-    redirect_to boarrds_path
+    redirect_to boards_path
   end
 
   private 

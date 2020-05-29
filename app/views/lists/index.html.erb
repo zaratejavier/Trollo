@@ -1,8 +1,8 @@
-<h1>Lists#index</h1>
+<h1>Your list</h1>
 <hr/>
 <% @lists.each do |list|%>
-  <div>
-    <h3><%= link_to list.name, lists_path %> </h3>
+  <div class="ui card">
+    <h3><%= link_to list.name, list_tasks_path(list) %> </h3>
   </div>
 <%end%>
 
